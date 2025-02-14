@@ -1,0 +1,20 @@
+{
+  "visual": {
+    "name": "kpilabel",
+    "displayName": "KPI Label",
+    "guid": "kpilabel926E6350069D4243B5E563D02DA7897A",
+    "visualClassName": "Visual",
+    "version": "1.0.0",
+    "description": "I made this visual while training on how to create PBI Visuals on Udemy with Marek Pilczuk",
+    "supportUrl": "mailto:zackgouttel@gmail.com",
+    "gitHubUrl": "https://github.com/zackgouttel"
+  },
+  "apiVersion": "4.7.0",
+  "author": { "name": "Zack Gouttel", "email": "zackgouttel@gmail.com" },
+  "assets": { "icon": "assets/label.png" },
+  "externalJS": null,
+  "style": "style/visual.less",
+  "capabilities": "capabilities.json",
+  "dependencies": null,
+  "stringResources": []
+}

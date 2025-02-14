@@ -1,0 +1,57 @@
+{
+  "dataRoles": [
+    {
+      "displayName": "Value",
+      "name": "value",
+      "kind": "Measure",
+      "requiredTypes": [{ "numeric": true }]
+    },
+    {
+      "displayName": "Target",
+      "name": "target",
+      "kind": "Measure",
+      "requiredTypes": [{ "numeric": true }]
+    }
+  ],
+  "privileges": [{ "name": "WebAccess" }, { "name": "LocalStorage" }],
+
+  "objects": {
+    "dataPoint": {
+      "displayName": "Data colors",
+      "properties": {
+        "defaultColor": {
+          "displayName": "Default color",
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "dataViewMappings": [
+    {
+      "categorical": {
+        "values": {
+          "select": [
+            {
+              "bind": {
+                "to": "value"
+              }
+            },
+            {
+              "bind": {
+                "to": "target"
+              }
+            }
+          ]
+        }
+      },
+      "conditions": [{ "value": { "max": 1 } ,  "target": { "max": 1 } }]
+    }
+  ],
+  "suppressDefaultTitle":true
+}
